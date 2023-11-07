@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <title>Classes de um Jogo</title>
+
+    <body>
+        <header>
+            <h1>Desafio Dio - Heróis</h1>
+        </header>
+    
+        <div class="container">
+            <form id="formulario">
+                <label for="nomeHeroi">Nome</label>
+                <input type="text" id="nomeHeroi" name="nomeHeroi" required>
+    
+                <label for="idadeHeroi">Idade</label>
+                <input type="number" id="idadeHeroi" name="idadeHeroi" required>
+    
+                <label for="tipoHeroi">Tipo</label>
+                <select name="tipoHeroi" id="tipoHeroi" required>
+                    <option value="selecionar">Selecionar</option>
+                </select>
+    
+                <button type="button" onclick="atacar()">Atacar</button>
+            </form>
+        </div>
+    
+        <div class="resultado-container">
+            <div class="header-container">
+                <h2>Ataque</h2>
+            </div>
+            <ul id="resultado">
+                <li>Informe os dados do herói...</li>
+            </ul>
+        </div>
+    
+        <script src="src/js/main.js"></script>
+    </body>
+    </html>
+    
